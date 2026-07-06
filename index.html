@@ -10,7 +10,7 @@
 	<!-- Start of headStart -->
     
     <!-- End of headStart -->
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, viewport-fit=cover">
 	<meta name="generator" content="Framer 64adcc9">
 	<title>My Framer Site</title>
     <meta name="description" content="Made with Framer">
@@ -287,7 +287,7 @@
       if(poster.indexOf(KEY)>-1){
         var c=v.parentElement;
         if(c && !c.querySelector('wistia-player')){
-          c.innerHTML='<wistia-player media-id="'+MEDIA+'" aspect="1.7777777777777777" style="width:100%;height:100%;display:block"></wistia-player>';
+          c.innerHTML='<wistia-player media-id="'+MEDIA+'" aspect="1.7777777777777777" autoplay="true" muted="true" style="width:100%;height:100%;display:block"></wistia-player>';
           if(!swapped){ swapped=true; console.log('[vsl] swapped video -> wistia'); }
         }
       }
@@ -301,7 +301,7 @@
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',boot); else boot();
 })();
 </script>
-</head>
+<meta name="theme-color" content="#0e0a07"><style id="mobile-bars-fix">html{background-color:#0e0a07 !important;-webkit-text-size-adjust:100%;}html,body{margin:0 !important;padding:0 !important;background-color:#0e0a07 !important;overflow-x:hidden !important;min-height:100%;}body{width:100%;max-width:100%;}</style><script id="force-viewport-fit">(function(){function fix(){var m=document.querySelector('meta[name="viewport"]');if(!m){m=document.createElement("meta");m.name="viewport";document.head.appendChild(m);} var want="width=device-width, viewport-fit=cover";if(m.getAttribute("content")!==want)m.setAttribute("content",want);} fix();try{new MutationObserver(fix).observe(document.head,{childList:true,subtree:true,attributes:true});}catch(e){} document.addEventListener("DOMContentLoaded",fix);var n=0,iv=setInterval(function(){fix();if(++n>40)clearInterval(iv);},250);})();</script></head>
 <body>
 	<script async src="https://events.framer.com/script?v=2" data-fid="a86512c9f7dbd8626cb7a775b2f12d7ff83a795932417d243954dc9a3ae5189e" data-no-nt></script>
 	<!-- Start of bodyStart -->
